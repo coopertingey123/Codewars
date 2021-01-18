@@ -9,3 +9,18 @@ function getSum(a, b)
    return result
    }
       
+
+   function uniqueInOrder(it) {
+    var final_result = []
+    var last_char
+    
+    for (var i = 0; i < it.length; i++) {
+      if (it[i] !== last_char) {
+        final_result.push(last_char = it[i])
+      }
+    }
+    
+    return final_result
+  }
+  
+  uniqueInOrder("oiasdOOOiiskkKKiiisss")
